@@ -92,9 +92,9 @@ step 3!*
 Without data, we have nothing to screen. So, you need to tell ELAS
 which dataset you want to screen for relevant articles.
 
-For this exercise we are screening in the so-called `Validation Mode`
-of ASReview. By screening in the [Validation
-Mode](https://asreview.readthedocs.io/en/latest/lab/validation.html){target="_blank"},
+For this exercise we will carry out a so-called `Validation Review`
+using ASReview. To be able to do a [Validation
+Review](https://asreview.readthedocs.io/en/latest/lab/validation.html){target="_blank"},
 we are going to make use of a [benchmark
 dataset](https://asreview.readthedocs.io/en/latest/lab/project_create.html#from-discovery){target="_blank"}.
 This means that all records in the dataset have already been labeled as
@@ -141,8 +141,8 @@ settings).
 
 When performing a systematic review with your own data, you need to
 provide the prior knowledge yourself (at least one relevant and one
-irrelevant record). However, because you are using the Validation Mode 
-of ASReview, the relevant records are known; the original authors have 
+irrelevant record). However, because you are doing a Validation Review 
+using ASReview, the relevant records are known; the original authors have 
 already read ALL records. See also the documentation 
 about the selection of [prior knowledge](https://asreview.readthedocs.io/en/latest/lab/project_create.html#prior-knowledge){target="_blank"}.
 
@@ -188,7 +188,7 @@ can proceed to step 6!*
 
 Everything is set up and ready to screen, well done!
 
-Since we are in the Validation Mode of ASReview, you can pretend to be an
+Since we are doing a Validation Review using ASReview, you can pretend to be an
 expert on the topic of PTSD and pretend you have all the knowledge of the
 original screeners. All records in the dataset have been labeled as
 relevant/irrelevant, which is indicated through a banner below each article.
