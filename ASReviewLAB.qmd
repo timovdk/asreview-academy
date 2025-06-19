@@ -132,7 +132,7 @@ Click on the `Show Options` button and proceed to the next step.
 More detailed information about setting up a project can be found on
 [ReadTheDocs](https://asreview.readthedocs.io/en/latest/lab/project_create.html){target="_blank"}.
  
-*Did you successfully create a project, and did you click `Show Options` If so, you can proceed to step 5!*
+*Did you successfully create a project, and did you click `Show Options`? If so, you can proceed to step 5!*
 
 ### Step 5: Prior knowledge
 
@@ -191,7 +191,7 @@ Step 6, the Screening Phase.
 
 ![](images/ASReviewLAB/step_5c.png){width=85% fig-align="center"}
 
-*Did you select between 1 and 5 relevant records and clicked `Screen`? If so, you
+*Did you select between 1 and 5 relevant records and click `Screen`? If so, you
 can proceed to step 6!*
 
 ## Screening phase
@@ -220,7 +220,7 @@ this record is based. If you want to learn more about these models, take a look
 at our [documentation](https://asreview.readthedocs.io/en/latest/lab/models.html){target="_blank"}.
 
 If you see nothing above a record, click on `Settings` in the menu on the left
-and swicth on `Show model information`.
+and switch on `Show model information`.
 
 ![](images/ASReviewLAB/step_6b.png){width=85% fig-align="center"}
 
@@ -231,8 +231,8 @@ Click on `Dashboard` in the menu on the left of the screen.
 For this exercise, we will use *50 consecutive irrelevant records* as
 the stopping rule. On the Dashboard page, click on `Set Threshold` and 
 set a manual threshold of 50. Once you hit 50 irrelevant records in a row
-you will get a popup, but you can also check up on your progress on this
-the [Dashboard page](https://asreview.readthedocs.io/en/latest/lab/progress.html){target="_blank"}.
+you will get a popup, but you can also check up on your progress on the 
+[Dashboard page](https://asreview.readthedocs.io/en/latest/lab/progress.html){target="_blank"}.
 To continue screening, go back to the Reviewer screen by clicking on the 
 `Reviewer` button in the menu on the left.
 
@@ -297,7 +297,8 @@ can you reorder your data to appear in the order in which you loaded
 them into ASReview? And back to the order provided by ASReview?
 
 Check if the number of records coded `asreview_label = 1` corresponds to the number
-of relevant records on the Dashboard. From which row number, based on
+of relevant records on the Dashboard. This column indicates which records you labeled 
+as relevant during the screening process. From which row number, based on
 the original ordering, do the included articles come from?
 
 For the last exercise, it is important to change the order back to the order
