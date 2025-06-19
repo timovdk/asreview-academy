@@ -109,7 +109,7 @@ This will show you a list of 26 benchmark datasets that are already labeled. In 
 
 ![](images/ASReviewLAB/step_3b.png){width=85% fig-align="center"}
 
-Then, you will be shown a menu with a donwload button. Click `Download`, and wait until the download finishes. When
+Then, you will be shown a menu with a download button. Click `Download`, and wait until the download finishes. When
 the download finishes, a new menu pops up which brings us to the next step: Setting up the project.
 
 ![](images/ASReviewLAB/step_3c.png){width=85% fig-align="center"}
