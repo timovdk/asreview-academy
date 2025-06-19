@@ -238,14 +238,22 @@ To continue screening, go back to the Reviewer screen by clicking on the
 
 ![](images/ASReviewLAB/step_6c.png){width=85% fig-align="center"}
 
-When you have reached your Stopping Rule and you are done screening, go
-back to the Dashboard. Here you can see the summary statistics of
-your project such as the number of records you have labeled relevant or
-irrelevant. It also shows how many records are in your dataset and how
-many records you labeled irrelevant since you have screened the last
-relevant record. For more information about how to read these summary
-statistics and interpret the corresponding charts, check out the
+When you have reached your Stopping Rule, you will be presented with a popup asking you
+whether you want to screen additional records, continue with a different model, or to 
+finish the project and export your data. For this exercise, we will simply click on 
+`Finish Project` in the bottom right, which will finish your project, and take you to the
+Dashboard.
+
+![](images/ASReviewLAB/step_6d.png){width=85% fig-align="center"}
+
+Here you can see the summary statistics of your project such as the number 
+of records you have labeled relevant or irrelevant. It also shows how many 
+records are in your dataset and how many records you labeled irrelevant since 
+you have screened the last relevant record. For more information about how to 
+read these summary statistics and interpret the corresponding charts, check out the
 [documentation](https://asreview.readthedocs.io/en/latest/lab/progress.html){target="_blank"}.
+
+![](images/ASReviewLAB/step_6e.png){width=85% fig-align="center"}
 
 The Van de Schoot (2018) dataset contains 38 relevant records in this
 particular example. Did you get to label all of them as relevant before
