@@ -119,15 +119,20 @@ the download finishes, a new menu pops up which brings us to the next step: Sett
 ### Step 4: Setting up a Project
 
 Now that the dataset is downloaded, we can continue with setting up the project. First, click on the pencil
-icon at the top of this menu to change the name of your project. You can also leave it like it is. Then
-you can click on `Screen` which creates a project for you. 
+icon at the top of this menu to change the name of your project. You can also keep the default name. 
+
+The next step is important for this exercise, but when using ASReview for your own review 
+there are cases where you can skip this, see [here](https://asreview.readthedocs.io/en/latest/lab/project_create.html#prior-knowledge){target="_blank"} 
+for more information. 
+
+Click on the `Show Options` button and proceed to the next step.
 
 ![](images/ASReviewLAB/step_4.png){width=85% fig-align="center"}
 
 More detailed information about setting up a project can be found on
 [ReadTheDocs](https://asreview.readthedocs.io/en/latest/lab/project_create.html){target="_blank"}.
  
-*Did you successfully create a project, and can you see the first record? If so, you can proceed to step 5!*
+*Did you successfully create a project, and did you click `Show Options` If so, you can proceed to step 5!*
 
 ### Step 5: Prior knowledge
 
@@ -146,14 +151,10 @@ using ASReview, the relevant records are known; the original authors have
 already read ALL records. See also the documentation 
 about the selection of [prior knowledge](https://asreview.readthedocs.io/en/latest/lab/project_create.html#prior-knowledge){target="_blank"}.
 
-To select the prior knowledge you first need to click on the `Customize`
-button on the left side of the screen. The customization window will open.
+To select the prior knowledge you first need to scroll down to `Prior knowledge`, 
+and click on the `Search` button.
 
 ![](images/ASReviewLAB/step_5a.png){width=85% fig-align="center"}
-
-On the customization window, scroll down to `Prior knowledge`, and click on the `Search` button.
-
-![](images/ASReviewLAB/step_5b.png){width=85% fig-align="center"}
 
 Now you will see a pop up that you can use to select prior knowledge.
 
@@ -163,7 +164,7 @@ The following five papers are known to be relevant:
     (DOI: [10.4088/JCP.13m08914](https://doi.org/10.4088/jcp.13m08914){target="_blank"})
 -   A Latent Growth Mixture Modeling Approach to PTSD Symptoms in Rape
     Victims (DOI: [10.1177/1534765610395627](https://doi.org/10.1177/1534765610395627){target="_blank"})
--   Peace and War: Trajectories of Posttraumatic Stress Disorder
+-   Peace and War
     Symptoms Before, During, and After Military Deployment in
     Afghanistan (DOI: [10.1177/0956797612457389](https://doi.org/10.1177/0956797612457389){target="_blank"})
 -   The relationship between course of PTSD symptoms in deployed U.S.
@@ -174,12 +175,23 @@ The following five papers are known to be relevant:
 To add the relevant records, you copy and paste the titles
 of these relevant records one by one in the search bar and add them as
 relevant. You should add between 1 and 5 relevant priors from this list.
-When you are done, go back to the Reviewer screen by clicking on the `Reviewer` button
-on the left.
+We only add relevant records as priors, because ASReview automatically provides
+us with random records during the screening phase until there is at least 1 relevant
+and 1 irrelevant label given by you. After that, ELAS will start to train on your data
+and it will sort the stack of unseen data whilst you are screening! When you are done
+adding 1 to 5 relevant priors, be sure to click the `return` button in the bottom right
+and continue to the next step.
+
+![](images/ASReviewLAB/step_5b.png){width=85% fig-align="center"}
+
+Then, you can see that the priors have been added correctly under `Show records (5)`.
+If this number does not match the number of priors you have added, you can click on
+this button to see which ones you did add. After that, click `Screen` and continue to
+Step 6, the Screening Phase.
 
 ![](images/ASReviewLAB/step_5c.png){width=85% fig-align="center"}
 
-*Did you select between 1 and 5 relevant records? If so, you
+*Did you select between 1 and 5 relevant records and clicked `Screen`? If so, you
 can proceed to step 6!*
 
 ## Screening phase
@@ -196,14 +208,35 @@ Click on the Relevant button (or press `R` on your keyboard) if the record
 is marked as relevant. If not, you can press the Irrelevant button (or `I` 
 on your keyboard).
 
-![](images/ASReviewLAB/step_6.png){width=85% fig-align="center"}
+![](images/ASReviewLAB/step_6a.png){width=85% fig-align="center"}
+
+After your first `Irrelevant` decision, ELAS will have enough information to
+start training a model (at least 1 relevant and 1 irrelevant label). This is 
+happening all whilst you are reading the next record. After a second labelling
+decision, either relevant or irrelevant, the banner at the top of the screening
+window will change from `This record is presented in a random manner`, to a 
+summary of the ELAS model you are using, and on how many labelling decisions 
+this record is based. If you want to learn more about these models, take a look 
+at our [documentation](https://asreview.readthedocs.io/en/latest/lab/models.html){target="_blank"}.
+
+If you see nothing above a record, click on `Settings` in the menu on the left
+and swicth on `Show model information`.
+
+![](images/ASReviewLAB/step_6b.png){width=85% fig-align="center"}
 
 Now, all we need is a Stopping Rule to determine when you are confident
 that you have identified (almost) all relevant records in your dataset.
-For this exercise, continue screening records until you have marked *50
-consecutive records as irrelevant*. You can check up on your progress in
-the [Dashboard
-page](https://asreview.readthedocs.io/en/latest/lab/progress.html){target="_blank"}.
+Click on `Dashboard` in the menu on the left of the screen. 
+
+For this exercise, we will use *50 consecutive irrelevant records* as
+the stopping rule. On the Dashboard page, click on `Set Threshold` and 
+set a manual threshold of 50. Once you hit 50 irrelevant records in a row
+you will get a popup, but you can also check up on your progress on this
+the [Dashboard page](https://asreview.readthedocs.io/en/latest/lab/progress.html){target="_blank"}.
+To continue screening, go back to the Reviewer screen by clicking on the 
+`Reviewer` button in the menu on the left.
+
+![](images/ASReviewLAB/step_6c.png){width=85% fig-align="center"}
 
 When you have reached your Stopping Rule and you are done screening, go
 back to the Dashboard. Here you can see the summary statistics of
@@ -241,8 +274,7 @@ platform](https://github.com/asreview/asreview/discussions){target="_blank"}.
 ### Step 7: Extracting and inspecting the data
 
 Now that you found all or most relevant records, you can export your
-data using [these
-instructions](https://asreview.readthedocs.io/en/latest/lab/progress.html#export-dataset){target="_blank"}.
+data using [these instructions](https://asreview.readthedocs.io/en/latest/lab/progress.html#export-dataset){target="_blank"}.
 If you choose to inspect your data in Excel, download the data in
 `Excel` format. If you prefer to inspect your data in R or Python, download the
 `CSV (UTF-8)` format and open it in R or Python.
